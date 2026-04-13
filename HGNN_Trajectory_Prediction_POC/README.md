@@ -45,7 +45,7 @@ python main.py --mode eval
 - 25% improvement in prediction accuracy over baseline GNN models.
 -  92% validation accuracy with data augmentation.
 
-# Metrics :- ADE (Average Displacement Error), FDE (Final Displacement Error), MR (Miss Rate)
+### Metrics :- ADE (Average Displacement Error), FDE (Final Displacement Error), MR (Miss Rate)
 
 - ADE (Average Displacement Error): Mean Euclidean distance between predicted and true trajectories across all future timesteps.
 
