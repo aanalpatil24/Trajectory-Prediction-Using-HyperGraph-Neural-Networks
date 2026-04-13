@@ -2,6 +2,10 @@
 
 A high-performance, GPU-native Proof of Concept for forecasting multi-agent trajectories in dense crowds. This repository provides a streamlined, fast-executing implementation of Sequence-to-Sequence HyperGraph Neural Networks, optimized for local testing and real-time inference demonstrations.
 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Features
 
 * **Group-Aware Forecasting:** Models complex crowd dynamics (e.g., families, groups) using Hypergraphs instead of simple 1-to-1 pairs.
