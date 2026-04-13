@@ -1,0 +1,14 @@
+hgnn-trajectory-prediction/
+├── core_research_framework/      # (The massive, multi-folder project)
+│   ├── src/
+│   ├── scripts/
+│   ├── tests/
+│   └── README.md                 # Deep technical documentation
+│
+├── lightweight_poc/              # (The 5-minute optimized script)
+│   ├── data/
+│   ├── models/
+│   ├── main.py
+│   └── README.md                 # Instant setup & demo guide
+│
+└── README.md                     # The Master Entry Point

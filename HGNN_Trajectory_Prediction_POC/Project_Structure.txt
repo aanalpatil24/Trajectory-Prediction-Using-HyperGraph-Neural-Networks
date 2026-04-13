@@ -1,0 +1,27 @@
+hgnn_trajectory_prediction_poc/
+│
+├── .gitignore               # Ignores junk files and cached data
+├── README.md                # Quick guide on how to run the project
+├── requirements.txt         # List of Python packages needed
+├── config.py                # One place for all settings and hyperparameters
+├── main.py                  # The main script to start training or evaluation
+├── train.py                 # The training loop (forward pass, loss, backprop)
+├── evaluate.py              # Tests the model and draws trajectory plots
+│
+├── data/                    # Everything related to handling data
+│   ├── __init__.py
+│   ├── dataset.py           # Creates the dummy crowd and loads batches
+│   └── augmentation.py      # Flips trajectories and simulates broken sensors
+│
+├── models/                  # The Neural Network architecture
+│   ├── __init__.py
+│   ├── hgnn.py              # Ties the encoder, graph, and decoder together
+│   └── layers.py            # The actual math (LSTM, Hypergraph Conv, MLP Decoder)
+│
+├── utils/                   # Helper functions
+│   ├── __init__.py
+│   ├── hypergraph_utils.py  # Fast GPU math to group nearby people together
+│   └── metrics.py           # Calculates the errors (ADE, FDE, Miss Rate)
+│
+├── checkpoints/             # Where the best_model.pth gets saved automatically
+└── results/                 # Where the trajectory plots get saved automatically

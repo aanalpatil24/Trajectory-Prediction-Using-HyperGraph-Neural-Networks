@@ -1,0 +1,1 @@
+"""HGNN Trajectory Prediction Package."""
