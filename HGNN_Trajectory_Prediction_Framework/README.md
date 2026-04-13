@@ -4,7 +4,6 @@ A sophisticated, research-grade deep learning framework for predicting pedestria
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-ee4c2c.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ![Hypergraph Architecture](https://kimi-web-img.moonshot.cn/img/ar5iv.labs.arxiv.org/1d97ad5903770d63b3b4096052f468fc156d8d7c.png)
 
