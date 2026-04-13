@@ -98,7 +98,7 @@ Clone the repository and set up your virtual environment to get started:
 
 ```bash
 # Clone repository
-git clone [https://github.com/yourusername/hgnn_trajectory_prediction.git](https://github.com/yourusername/hgnn_trajectory_prediction.git)
+git clone [ https://github.com/aanalpatil24/Trajectory-Prediction-Using-HyperGraph-Neural-Networks.git](https://github.com/aanalpatil24/Trajectory-Prediction-Using-HyperGraph-Neural-Networks.git)
 cd hgnn_trajectory_prediction
 
 # Create and activate virtual environment
@@ -136,3 +136,4 @@ python scripts/evaluate.py \
     --dataset synthetic \
     --num_samples 100 \
     --visualize
+```
