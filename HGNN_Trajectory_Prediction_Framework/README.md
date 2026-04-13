@@ -30,27 +30,27 @@ Traditional trajectory prediction models treat social interactions as strict **p
 ## System Architecture
 The pipeline is highly modularized, processing temporal histories through a dynamic spatial hypergraph before decoding future coordinates.
 
-# 1. Temporal Encoder (History)
+### 1. Temporal Encoder (History)
 Compresses the past 8 timesteps of (x, y) coordinates into a latent hidden state per agent.
 
 ### Python
 encoder = TrajectoryEncoder(input_dim=2, hidden_dim=128, num_layers=2)
 
-# 2. Hypergraph Constructor (Social Groups)
+### 2. Hypergraph Constructor (Social Groups)
 Dynamically infers social cliques using DBSCAN, grouping agents within a 2.0m spatial threshold.
 
 ### Python
 constructor = HypergraphConstructor(eps=2.0, min_samples=2)
 hyperedge_index, weights, metadata = constructor.construct_hypergraph(positions)
 
-# 3. HGNN Layers (Message Passing)
+### 3. HGNN Layers (Message Passing)
 Executes higher-order message passing (Nodes → Hyperedges → Nodes) to distribute social context.
 
 ### Python
 hgnn = MultiLayerHGNN(hidden_dim=128, num_layers=2)
 social_features = hgnn(individual_features, hyperedge_index, weights)
 
-# 4. Autoregressive Decoder (Prediction)
+### 4. Autoregressive Decoder (Prediction)
 Autoregressively predicts the next 12 timesteps based on the fused social and temporal features.
 
 ### Python
